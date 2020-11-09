@@ -1,11 +1,16 @@
 :root{
-    --backgroundGradientFrom:hsl(237, 12%, 33%); 
-    --backgroundGradientTo:hsl(240, 6%, 50%);
+    --backgroundGradientFrom:hsl(273, 75%, 66%); 
+    --backgroundGradientTo:hsl(240, 73%, 65%);
     
     --divider-color:hsl(240, 5%, 91%);
+    --answer-text-color:hsl(240, 6%, 50%);
 
-    --body-font-size: 1rem;
-    --heading-font-size:1.4rem;
+    --question-font-size: .85rem;
+    --answer-font-size:.65rem;
+    --heading-font-size:1.6rem;
+   
+
+
 
     --heading-font-weight:700;
     --body-font-weight:400;
@@ -21,5 +26,55 @@
 body{
     font-family: 'Kumbh Sans', sans-serif;
     font-weight: var(--body-font-weight);
-    font-size: var(--body-font-size);
+
+    display: flex;
+    flex-direction: column;
+    align-items:  space-between;
+    min-height: 100vh;
+    
+    background:linear-gradient(180deg,var(--backgroundGradientFrom),var(--backgroundGradientTo))
 }
+.main{
+    flex-grow: 1;
+    align-self: center;
+    justify-self: center;
+    width: 80%;
+}
+
+.wrapper{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* padding:1rem; */
+}
+.questions{
+    background-color: #fafafa;
+    padding:1rem;
+    border-radius: 15px;
+    margin:1.4rem 0;
+}
+.questions h1{
+    font-size: var(--heading-font-size);
+}
+
+.questions .title{
+    text-align: center;
+    margin:1.4rem 0;
+}
+.questions .master-detail{
+    border-bottom:solid 1.4px var(--divider-color)
+}
+.master-detail .question h3{
+    font-size: var(--question-font-size);
+    font-weight: var(--body-font-weight);
+    margin:10px 0;
+}
+
+.master-detail .answer{
+    padding:5px 0;
+    font-size: var(--answer-font-size);
+    line-height: 1rem;
+    color: var(--answer-text-color);
+}
+
