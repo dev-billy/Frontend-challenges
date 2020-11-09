@@ -51,8 +51,11 @@ body{
     /* width:50%; */
     padding:1rem;
 }
+.illustration .illustration-desktop{
+    display:none;
+}
 
-.illustration-mobile .illustration{
+.illustration .illustration-mobile{
      position:absolute;
     z-index:3;
     left:45%;
@@ -65,7 +68,7 @@ body{
     transform: translate(-50%,-50%); 
 
 }
-.illustration-mobile .background{
+.illustration .background-mobile{
     position:absolute;
     top:10%;
     background: url('/images/bg-pattern-mobile.svg');
@@ -82,6 +85,7 @@ body{
     /* position:absolute; */
     background-color: #fafafa;
     padding:1rem;
+    
 
     min-width: 250px;
     margin:0 auto;
@@ -139,10 +143,75 @@ body{
 }
 
 @media only screen and (min-width:768px){
-    .illustration-mobile .illustration{
+    .illustration .illustration-mobile{
         left:50%;
     }
-    .illustration-mobile .background{
+    .illustration .background-mobile{
         left:53%;
     }
+}
+
+@media only screen and (min-width:1024px){
+
+    :root{
+        --question-font-size: 1.3rem;
+        --answer-font-size:1.2rem;
+        --heading-font-size:2rem;
+    }
+    .illustration-mobile{
+        display: none;
+    }
+    .illustration .background-mobile{
+        display:none;
+    }
+
+    .illustration{
+        width:50%;
+        position: relative;
+    }
+    .main{
+        width: 90%;
+    }
+
+    .wrapper{
+        background:#fafafa;
+        display:flex;
+        padding:3rem 0;
+        flex-direction: row;
+        margin:4rem 0;
+        width: 100%;
+        overflow: hidden;
+        align-items: space-between;
+        justify-content: space-between;
+        border-radius:10px;
+    }
+
+    .illustration .illustration-desktop{
+        z-index: 1;
+        display: block;
+        position: absolute;
+        background-image: url('./images/illustration-woman-online-desktop.svg'), url('./images/bg-pattern-desktop.svg');
+        background-repeat: no-repeat;
+        background-position: 155px 80px, -340px -220px;
+        width: 150%;
+        height: 150%;
+        max-width: 800px;
+        top: -110px;
+        left: -220px;
+        
+    }
+ 
+    .questions{
+        padding:10px;
+        justify-self: end;
+        align-self:end;
+        /* width:25%; */
+    }
+    h1{
+        text-align: start;
+    }
+
+
+    
+    
 }
