@@ -1,3 +1,18 @@
+:root{
+    --backgroundGradientFrom:hsl(237, 12%, 33%); 
+    --backgroundGradientTo:hsl(240, 6%, 50%);
+    
+    --divider-color:hsl(240, 5%, 91%);
+
+    --body-font-size: 1rem;
+    --heading-font-size:1.4rem;
+
+    --heading-font-weight:700;
+    --body-font-weight:400;
+
+    --hover-red:hsl(14, 88%, 65%);
+}
+
 *{
     margin:0;
     box-sizing: border-box;
@@ -5,4 +20,6 @@
 
 body{
     font-family: 'Kumbh Sans', sans-serif;
+    font-weight: var(--body-font-weight);
+    font-size: var(--body-font-size);
 }
