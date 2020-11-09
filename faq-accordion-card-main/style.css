@@ -5,8 +5,8 @@
     --divider-color:hsl(240, 5%, 91%);
     --answer-text-color:hsl(240, 6%, 50%);
 
-    --question-font-size: .85rem;
-    --answer-font-size:.65rem;
+    --question-font-size: 1.1rem;
+    --answer-font-size:1rem;
     --heading-font-size:1.6rem;
    
 
@@ -134,7 +134,7 @@ body{
     align-self:center;
 
     height: 8px;
-    width:11px;
+    width:15px;
     background-repeat: no-repeat;
     background-image: url('/images/icon-arrow-down.svg');
     
