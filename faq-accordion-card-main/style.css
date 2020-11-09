@@ -137,3 +137,12 @@ body{
 .answer{
     display: none;
 }
+
+@media only screen and (min-width:768px){
+    .illustration-mobile .illustration{
+        left:50%;
+    }
+    .illustration-mobile .background{
+        left:53%;
+    }
+}
