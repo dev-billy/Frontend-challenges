@@ -1,0 +1,170 @@
+:root{
+    --primaryColor: hsl(304, 33%, 36%);
+    --accentColor: hsl(300, 88%, 84%);
+    --backgroundColor:hsl(300, 24%, 96%);
+    --bodyTextColor: rgb(105, 105, 105);
+    --white: hsl(0, 0%, 100%);
+}
+
+body{
+    background-color: var(--backgroundColor);
+    font-family: Spartan;
+}
+.content{
+    width:80%;
+    max-width:1020px;
+    margin:10px auto;
+}
+
+main{
+    padding:1rem;
+    text-align: center;
+}
+main h1{
+    color: var(--primaryColor);
+   
+    font-size:2.5rem;
+    font-weight: 700;
+}
+
+main p{
+    color: var(--bodyTextColor);
+    font-weight:400;
+    font-size:1rem; 
+}
+
+.highlight-review-box{
+    padding:.2rem;
+   
+}
+.highlight-review{
+    margin:15px;
+    border-radius: 5px;;
+    background:#eee;
+    padding:15px; 
+    text-align: center;
+}
+.star-group{
+    margin:10px auto;
+}
+.star-group object{
+    margin-right:5px;
+}
+.highlight-review h2{
+    font-size:1rem;
+    color:var(--primaryColor);
+}
+
+.customer-review-box{
+    padding:2rem;
+    background-color: var(--primaryColor);
+    border-radius:15px;
+    margin-bottom:30px;
+    color:var(--white);
+}
+
+.customer-profile{
+    display:flex;
+    
+}
+
+.customer-profile img{
+    height:80px;
+    width:80px;
+    border-radius:100%;
+    margin-right:20px;
+    align-self: center;
+}
+
+.customer-profile h3{
+    font-weight:500;
+    font-size:1.2rem;
+}
+
+.customer-profile h4{
+    font-weight:400;
+    color:var(--accentColor);
+}
+
+.customer-review-box p{
+    line-height: 2rem;
+    font-weight: 500;
+}
+
+@media only screen and (min-width: 1024px){
+    .content{
+        width:90%;
+
+        justify-content:space-between;
+        max-width:1240px;
+    }
+    .highlight{
+        display:flex;    
+    }
+    main{
+        text-align: start;
+        width:45%;
+        padding:3rem;
+    }
+    main h1{
+        font-size:3rem;
+    }
+    .highlight-review-box{
+        display:flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width:55%;
+        margin:40px auto;
+    }
+    .highlight-review{
+        display: flex;
+        text-align: start;
+        flex-direction: row;
+        flex-wrap: wrap;   
+    }
+    .star-group{
+        margin:10px;
+    }
+    .star-group object{
+        margin:0;
+        width:15px;
+        height:15px;
+    }
+    .highlight-review h2{
+       margin-left:20px;
+        align-self: center;
+        justify-self: center;
+        font-size:1rem;
+    }
+    .review2{
+        margin-left:60px;
+    }
+    .review3{
+        margin-left:100px;
+    }
+
+    .buyer-review{
+        display: flex;
+        justify-content: space-around;
+    }
+    .customer-review-box{
+        width:20%;
+    }
+    .customer-review-box h3{
+        font-size: 1rem;
+    }
+    .customer-review-box h4{
+        font-size:.75rem;
+    }
+    .customer-review-box p{
+        font-size:.85rem;
+        line-height: 1.5rem;
+    }
+    .box2{
+        margin-top: 30px;
+    }
+    .box3{
+        margin-top:40px;
+    }
+
+}
