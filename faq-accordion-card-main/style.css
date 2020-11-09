@@ -39,9 +39,11 @@ body{
     align-self: center;
     justify-self: center;
     width: 80%;
+    
 }
 
 .wrapper{
+    position:relative;
     
     display: flex;
     flex-direction: column;
@@ -62,6 +64,10 @@ body{
     text-align: center;
     margin:1.4rem 0;
 }
+
+.master-detail{
+    margin-bottom :10px;
+}
 .questions .master-detail{
     border-bottom:solid 1.4px var(--divider-color)
 }
@@ -69,6 +75,7 @@ body{
     font-size: var(--question-font-size);
     font-weight: var(--body-font-weight);
     margin:10px 0;
+    margin-right:10px;
 }
 
 .master-detail .answer{
@@ -77,4 +84,22 @@ body{
     line-height: 1rem;
     color: var(--answer-text-color);
 }
+.questions .question{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
+.leading{
+    justify-self: center;
+    align-self:center;
+
+    height: 8px;
+    width:10px;
+    background-repeat: no-repeat;
+    background-image: url('/images/icon-arrow-down.svg');
+    
+}
+.answer{
+    display: none;
+}
